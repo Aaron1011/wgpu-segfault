@@ -104,7 +104,6 @@ dependencies = [
 [[package]]
 name = "gfx-backend-gl"
 version = "0.7.0"
-source = "git+https://github.com/gfx-rs/gfx?rev=80655862ac4afc5efb6675eb9ac7c38e73544750#80655862ac4afc5efb6675eb9ac7c38e73544750"
 dependencies = [
  "arrayvec",
  "bitflags",
@@ -125,7 +124,6 @@ dependencies = [
 [[package]]
 name = "gfx-hal"
 version = "0.7.0"
-source = "git+https://github.com/gfx-rs/gfx?rev=80655862ac4afc5efb6675eb9ac7c38e73544750#80655862ac4afc5efb6675eb9ac7c38e73544750"
 dependencies = [
  "bitflags",
  "naga",

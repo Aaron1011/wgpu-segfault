@@ -22,6 +22,5 @@ fn main() {
     std::thread::spawn(|| {
         run();
     }).join().unwrap();
-    println!("Sleeping!");
-    std::thread::sleep(std::time::Duration::new(2, 0));
+    println!("Back in main!");
 }

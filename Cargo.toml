@@ -8,7 +8,7 @@ edition = "2018"
 
 [dependencies]
 env_logger = "0.8.3"
-gfx-backend-gl = { git = "https://github.com/gfx-rs/gfx", rev = "80655862ac4afc5efb6675eb9ac7c38e73544750" }
-gfx-hal = { git = "https://github.com/gfx-rs/gfx", rev = "80655862ac4afc5efb6675eb9ac7c38e73544750" }
+gfx-backend-gl = { path = "/home/aaron/repos/gfx/src/backend/gl" }
+gfx-hal = { path = "/home/aaron/repos/gfx/src/hal" }
 log = "0.4.14"
 
