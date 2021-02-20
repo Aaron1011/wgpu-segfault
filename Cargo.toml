@@ -7,8 +7,5 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-env_logger = "0.8.3"
-gfx-backend-gl = { path = "/home/aaron/repos/gfx/src/backend/gl" }
-gfx-hal = { path = "/home/aaron/repos/gfx/src/hal" }
-log = "0.4.14"
-
+gfx-backend-gl = { git = "https://github.com/gfx-rs/gfx/", rev = "07043744b4b05893363066ca0e50c5e38348f20c" }
+gfx-hal = { git = "https://github.com/gfx-rs/gfx/", rev = "07043744b4b05893363066ca0e50c5e38348f20c" }
