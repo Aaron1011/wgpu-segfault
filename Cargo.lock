@@ -1038,6 +1038,8 @@ dependencies = [
 name = "wgpu-segfault"
 version = "0.1.0"
 dependencies = [
+ "gfx-backend-gl",
+ "gfx-hal",
  "tracing",
  "tracing-subscriber",
  "wgpu-core",

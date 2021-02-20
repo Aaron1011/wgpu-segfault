@@ -1,12 +1,14 @@
 use tracing::{info, Level};
 use tracing_subscriber::FmtSubscriber;
+use gfx_hal::Instance;
 
 fn run() {
-    wgpu_core::hub::Global::new(
+    /*wgpu_core::hub::Global::new(
             "wgpu",
             wgpu_core::hub::IdentityManagerFactory,
             wgpu_types::BackendBit::all()
-    );
+    );*/
+    gfx_backend_gl::Instance::create("wgpu", 1);
     println!("Thread exiting!");
 }
 
