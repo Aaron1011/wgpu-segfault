@@ -1,4 +1,6 @@
 use gfx_hal::Instance;
+use env_logger::Builder;
+use log::LevelFilter;
 
 fn run() {
     /*wgpu_core::hub::Global::new(
@@ -11,6 +13,11 @@ fn run() {
 }
 
 fn main() {
+
+    let mut builder = Builder::new();
+    builder.filter_level(LevelFilter::Trace);
+    builder.init();
+
 
     std::thread::spawn(|| {
         run();
