@@ -1,5 +1,3 @@
-use tracing::{info, Level};
-use tracing_subscriber::FmtSubscriber;
 use gfx_hal::Instance;
 
 fn run() {
@@ -13,15 +11,6 @@ fn run() {
 }
 
 fn main() {
-    let subscriber = tracing_subscriber::FmtSubscriber::builder()
-        // all spans/events with a level higher than TRACE (e.g, debug, info, warn, etc.)
-        // will be written to stdout.
-        .with_max_level(Level::TRACE)
-        // builds the subscriber.
-        .finish();
-
-    tracing::subscriber::set_global_default(subscriber)
-        .expect("setting default subscriber failed");
 
     std::thread::spawn(|| {
         run();
